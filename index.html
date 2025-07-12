@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">let currentPage = 1;
+let perPage = 10;
+let sortBy = 'newest';
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Suitmedia</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="main-header">
+    <div class="logo">Suitmedia</div>
+    <nav>
+      <ul>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#" class="active">Ideas</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="banner-image"></div>
+    <div class="banner-text">
+      <h1>Ideas</h1>
+      <p>Where all our great things begin</p>
+    </div>
+  </section>
+
+  <section class="controls">
+    <div id="status"></div>
+    <div>
+      <label>Show per page:</label>
+      <select id="showPerPage">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+      </select>
+
+      <label>Sort by:</label>
+      <select id="sortBy">
+        <option value="newest">Newest</option>
+        <option value="oldest">Oldest</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="post-list" id="postList"></section>
+
+  <div class="pagination" id="pagination"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
